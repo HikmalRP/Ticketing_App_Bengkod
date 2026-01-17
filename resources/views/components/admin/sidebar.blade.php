@@ -60,22 +60,22 @@
                     <span class="is-drawer-close:hidden">History Pembelian</span>
                 </a>
             </li>
-
-            <!-- logout -->
-            <div class="w-full p-4">
-                <form action="{{ route('logout') }}" method="POST">
-                    @csrf
-                    <button type="submit"
-                        class="btn btn-outline btn-error w-full is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                        data-tip="Logout">
-                        <!-- Logout icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M10 17v-2h4v-2h-4v-2l-5 3l5 3m9-12H5q-.825 0-1.413.588T3 7v10q0 .825.587 1.413T5 19h14q.825 0 1.413-.587T21 17v-3h-2v3H5V7h14v3h2V7q0-.825-.587-1.413T19 5z" />
-                        </svg>
-                        <span class="is-drawer-close:hidden">Logout</span>
-                    </button>
-                </form>
-            </div>
+        </ul>
+        <!-- logout -->
+        <div class="w-full p-4">
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit"
+                    class="btn btn-outline btn-error w-full is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                    data-tip="Logout">
+                    <!-- Logout icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M10 17v-2h4v-2h-4v-2l-5 3l5 3m9-12H5q-.825 0-1.413.588T3 7v10q0 .825.587 1.413T5 19h14q.825 0 1.413-.587T21 17v-3h-2v3H5V7h14v3h2V7q0-.825-.587-1.413T19 5z" />
+                    </svg>
+                    <span class="is-drawer-close:hidden">Logout</span>
+                </button>
+            </form>
+        </div>
     </div>
 </div>
