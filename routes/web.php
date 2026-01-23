@@ -8,9 +8,14 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\TiketController;
 use App\Http\Controllers\Admin\HistoriesController;
 use App\Http\Controllers\User\HomeController;
+use App\Http\Controllers\Admin\EventController as AdminEventController;
+use App\Http\Controllers\User\EventController as UserEventController;
 
-
+// Home Route
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// Event Detail Route
+Route::get('/events/{event}', [UserEventController::class, 'show'])->name('events.show');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
